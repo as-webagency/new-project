@@ -357,7 +357,7 @@ body, html {
 }
 
 body {
-  font-family: 'Poppins', Arial, Helvetica, Helvetica Neue, sans-serif;
+  font-family: '', Arial, Helvetica, Helvetica Neue, sans-serif;
   font-size: 16px;
   font-weight: normal;
 }
@@ -366,6 +366,10 @@ body {
   max-width: 1260px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+ul, ol {
+  list-style: none;
 }
 
 a {
@@ -387,6 +391,12 @@ button {
 
 .d-none {
   display: none;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .container__relative {
