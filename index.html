@@ -11,27 +11,41 @@
     <link rel="shortcut icon" href="./favicon/favicon.ico">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="page">
     
-    <header class="header">
+    <header class="header page__header">
         <div class="container">
             <div class="header__content"></div>
         </div>
     </header>
     <main class="index">
-        
+        <section class="offer index__offer">
+            <div class="container"></div>
+        </section>
     </main>
-    <footer class="footer">
+    <footer class="footer page__footer">
         <div class="container">
             <div class="footer__content"></div>
         </div>
     </footer>
 
-    <div class="popup">
+    <div class="popup page__popup">
         <div class="popup__content"></div>
     </div>
 
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+        // src="./img/project/project3.jpg" data-src="./img/project/project3.jpg"
+        function init() {
+            var imgDefer = document.getElementsByTagName( 'img' );
+            for ( var i = 0; i < imgDefer.length; i++ ) {
+                if ( imgDefer[i].getAttribute( 'data-src' ) ) {
+                    imgDefer[i].setAttribute( 'src', imgDefer[i].getAttribute( 'data-src' ) );
+                } 
+            } 
+        }
+        window.onload = init;
+    </script>
 </body>
 </html>

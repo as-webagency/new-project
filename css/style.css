@@ -372,9 +372,17 @@ ul, ol {
   list-style: none;
 }
 
+a {
+  display: block;
+}
+
 a,
 a:hover {
   text-decoration: none;
+}
+
+picture {
+  display: block;
 }
 
 picture img {
@@ -397,6 +405,7 @@ img {
 
 button {
   cursor: pointer;
+  display: block;
 }
 
 .d-block {
@@ -411,14 +420,6 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.container__relative {
-  position: relative;
-}
-
-.section__relative {
-  position: relative;
 }
 
 .input {
@@ -441,9 +442,21 @@ button {
   opacity: 1;
 }
 
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
 .popup {
   display: none;
-  position: fixed;
   top: 0;
   right: 0;
   left: 0;
