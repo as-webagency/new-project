@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
     <title>Document</title>
@@ -11,26 +11,28 @@
     <link rel="shortcut icon" href="./favicon/favicon.ico">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="page">
+<body>
     
-    <header class="header page__header">
-        <div class="container">
-            <div class="header__content"></div>
+    <div class="pages">
+        <header class="header pages__header">
+            <div class="container">
+                <div class="header__content"></div>
+            </div>
+        </header>
+        <main class="index">
+            <section class="offer index__offer">
+                <div class="container"></div>
+            </section>
+        </main>
+        <footer class="footer pages__footer">
+            <div class="container">
+                <div class="footer__content"></div>
+            </div>
+        </footer>
+    
+        <div class="popup pages__popup">
+            <div class="popup__content"></div>
         </div>
-    </header>
-    <main class="index">
-        <section class="offer index__offer">
-            <div class="container"></div>
-        </section>
-    </main>
-    <footer class="footer page__footer">
-        <div class="container">
-            <div class="footer__content"></div>
-        </div>
-    </footer>
-
-    <div class="popup page__popup">
-        <div class="popup__content"></div>
     </div>
 
     <script src="https://code.jquery.com/jquery.min.js"></script>
@@ -50,5 +52,6 @@
         const da = new DynamicAdapt( 'max' );  
         da.init();
     </script>
+    
 </body>
 </html>
