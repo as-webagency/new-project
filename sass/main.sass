@@ -1,23 +1,26 @@
-@import 'variables'
-@import 'mixin'
-@import 'mixin-flex'
-@import 'mixin-grid'
-@import 'normalize'
-@import 'font'
-@import 'grid'
-@import 'settings'
-@import 'interface'
-@import 'template/pages'
+// abstracts
+@import 'abstracts/variables'
+@import 'abstracts/mixins'
+@import 'abstracts/mixins-flex'
+@import 'abstracts/mixins-grid'
 
-// Шапка
-@import 'template/header'
-// Название секции
-@import 'template/index/index'
-@import 'template/index/offer'
+// base
+@import 'base/normalize'
+@import 'base/fonts'
+@import 'base/settings'
+@import 'base/grid'
+@import 'base/interface'
+@import 'base/swiper-bundle.min'
 
-// Подвал
-@import 'template/footer'
-// Окна попап
-@import 'template/popup'
-// Медиа запросы
-@import 'template/media'
+// layout
+@import 'layout/pages'
+@import 'layout/header'
+
+// pages
+@import 'pages/index/index'
+@import 'pages/index/offer'
+
+// end layout
+@import 'layout/footer'
+@import 'layout/popup'
+@import 'layout/media'
