@@ -3,6 +3,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
     'use strict';
 
     // Подгружаем тот формат, который поддерживает браузер
+    // <div class="" style="background-image: url('.webp')" data-bg=".png" data-bg-webp=".webp"></div>
     const converterWebP = () => {
         const canUseWebp = () => {
             const elem = document.createElement( 'canvas' );
